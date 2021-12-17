@@ -1,0 +1,16 @@
+main: dev.xvnukz.coins.xCoins
+author: xVnukz
+version: 0.0.1
+name: xCoins
+
+commands:
+  coins:
+   description: The command coins
+   aliases: [xcoins]
+  pay:
+   description: The command pay
+  balance:
+   description: The command balance
+   aliases: [bal, money] 
+  top:
+   description: The command top

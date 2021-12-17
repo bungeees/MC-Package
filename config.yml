@@ -1,0 +1,67 @@
+# 
+# RoseCoins | Development
+# Here you can edit the configuration of the plugin.
+# Remember if you change the version you need restore this file
+# If you need support please contact in the discord: discord.gg/yW6d9EW7Eq
+# 
+Config:
+  General:
+    prefix: "&7[&dRoseCoins&7] &r"
+    cancel_console_execute_commands: false
+    default_coins: "0"
+  Commands:
+    Add:
+      enabled: true
+      permission: "rosecoins.command.add"
+    Remove:
+      enabled: true
+      permission: "rosecoins.command.remove"
+    Set:
+      enabled: true
+      permission: "rosecoins.command.set"
+    Reset:
+      enabled: true
+      permission: "rosecoins.command.reset"
+    Check:
+      enabled: true
+      permission: "rosecoins.command.check"
+    Pay:
+      enabled: true
+      permission: "rosecoins.command.pay"
+    Balance:
+      enabled: true
+      permission: "rosecoins.command.balance"
+    Withdraw:
+      enabled: true
+      permission: "rosecoins.command.withdraw"
+  Join:
+    send_message_join: true
+    change_level_on_join: true
+  Withdraw:
+    name: "&a(&2$&a) &a100 coins &7(Right Click)"
+    id: 339
+    lore:
+    - "&r"
+    - "&7Right click to &dreclaim &7this item."
+    - "&7The price of this item is: &d100 coins."
+    - "&r"
+Messages:
+  Join:
+    join_message: "&fWelcome, you have currently: &d%coins% &fcoins."
+  File:
+    file_creating: "&aCreating file... please wait"
+    file_created: "&cSuccesfully created the file, please re-join to the server."
+    file_reloaded: "&aSuccesfully reloaded the config file."
+  Coins:
+    coins_added: "&aSuccesfully added %coins% coins to the player %player%."
+    coins_removed: "&aSuccesfully removed %coins% coins to the player %player%."
+    coins_seted: "&aSuccesfully seted %coins% coins to the player %player%"
+    coins_reseted: "&cSuccesfully reseted the coins to the player %player%."
+    coins_check: "&fThe player currently have: &d%coins% &fcoins."
+    error_characters: "&cYou cannot use characters in the coins."
+    balance_check: "&fYour currently have: &d%coins% &fcoins."
+  General:
+    message_cancel_console: "&cYou cannot execute commands in the console."
+    
+    
+  
