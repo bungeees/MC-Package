@@ -94,7 +94,7 @@ public class Commands implements Listener, CommandExecutor{
 			        		Pattern pattern = Pattern.compile("[a-zA-Z`~!@#$%^&*()_=+{}|;:,./<>?]");
 			        		Matcher m = pattern.matcher(args[2]);
 			        		if (m.find()) {
-			        			if(sender.hasPermission(SetPermission) && sender.hasPermission("rosecoins.admin")) {
+			        			if(sender.hasPermission(SetPermission) && sender.hasPermission("xcoins.admin")) {
 				    				String CharactersErrorMessage = config.getString("Messages.Coins.error_characters");
 				    				String Prefix = config.getString("Config.General.prefix");
 				        		    player.sendMessage(ChatColor.translateAlternateColorCodes('&', Prefix+CharactersErrorMessage));
@@ -146,7 +146,7 @@ public class Commands implements Listener, CommandExecutor{
 	        	}else if(args[0].equalsIgnoreCase("reset") && args.length > 1) {
 	        		String ResetPermission = config.getString("Config.Commands.Reset.permission");
 					if(config.getString("Config.Commands.Reset.enabled") == "true") {
-		        		if(sender.hasPermission(ResetPermission) || sender.hasPermission("rosecoins.admin")) {
+		        		if(sender.hasPermission(ResetPermission) || sender.hasPermission("xcoins.admin")) {
 		        			Player target = Bukkit.getPlayer(args[1]);
 		        			FileConfiguration playerdata = plugin.getPlayerData();
 		    				String ConfigCoins = config.getString("Config.General.default_coins");
@@ -182,7 +182,7 @@ public class Commands implements Listener, CommandExecutor{
 	        			}
 	        		}else {
 						if(config.getString("Config.Commands.Add.enabled") == "true") {
-		        			if(sender.hasPermission(AddPermission) || sender.hasPermission("rosecoins.admin")) {
+		        			if(sender.hasPermission(AddPermission) || sender.hasPermission("xcoins.admin")) {
 			        			Player target = Bukkit.getPlayer(args[1]);
 			        			FileConfiguration playerdata = plugin.getPlayerData();
 			        			int getCoins = Integer.valueOf(playerdata.getString("Players."+player.getUniqueId()+".coins"));
