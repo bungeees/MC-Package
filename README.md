@@ -14,4 +14,4 @@ The plugin is not finished but you can guide a bit in the code, the code is stru
   
 /coins reload - Reloaded config file.
   
-  Author: xVnukz // David
+  Author: xVnukz // David / OmxrDev
