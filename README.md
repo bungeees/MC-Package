@@ -1,4 +1,4 @@
-# Crates Plugin 
+# Coins Plugin 
 
 The plugin is not finished but you can guide a bit in the code, the code is struggling in only 2 days so it may have some bugs
 
